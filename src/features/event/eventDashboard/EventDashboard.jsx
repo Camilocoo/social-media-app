@@ -85,7 +85,9 @@ const eventsDashboard = [
                     </Grid.Column>
                    < Grid.Column width={6}>
                    <Button onClick={this.handleFormOpen} positive content='Create Event'/>
-                   {this.state.isOpen&&<EventForm/>}
+                   {this.state.isOpen&&
+                   <EventForm handleCancel={this.handleCancel}/>
+                  }
                    
                    </Grid.Column>
                 </Grid>
